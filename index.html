@@ -157,7 +157,7 @@
         <main>
             <div class="press-release-header">
                 PRESS RELEASE<br>
-                January 17, 2025
+                <span id="currentDate"></span>
             </div>
 
             <h1>Apple Introduces Groundbreaking Business Intelligence Platform, in Collaboration with Microsoft and OpenAI</h1>
@@ -197,5 +197,18 @@
             </div>
         </main>
     </div>
+<script>
+    // Function to update the date
+    function updateDate() {
+        var today = new Date();
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        var dateString = today.toLocaleDateString('en-US', options);
+        document.getElementById('currentDate').textContent = dateString;
+    }
+
+    // Call the updateDate function when the page loads
+    window.onload = updateDate;
+</script>
+    
 </body>
 </html>
