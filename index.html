@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apple Business Intelligence Platform Announcement">
+    <meta name="description" content="Apple unveils revolutionary Business Intelligence platform featuring Vision Pro integration, OpenAI technology, and Microsoft enterprise tools. Transform your data analytics experience.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Apple Business Intelligence, Vision Pro, OpenAI, Microsoft Integration, Business Analytics, AI-Driven Analytics, Data Visualization, Enterprise Solutions">
+    <meta name="author" content="Apple Inc.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Apple Fuses Intuitive Design with Cutting-Edge AI in New BI Suite">
+    <meta property="og:description" content="Experience the future of business intelligence with Apple's groundbreaking platform combining Vision Pro, OpenAI, and Microsoft enterprise solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://applebusinessintelligence.com">
+    <meta property="og:site_name" content="Apple Business Intelligence">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apple Revolutionizes Business Intelligence">
+    <meta name="twitter:description" content="Discover how Apple's new BI platform transforms data analytics with Vision Pro, AI integration, and enterprise-grade security.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://applebusinessintelligence.com">
+
     <title>Apple Newsroom - Business Intelligence Platform</title>
     <style>
         :root {
             --apple-gray: #86868b;
             --apple-text: #1d1d1f;
-            --apple-link: #0066CC;
+            --apple-link: #0071e3;  /* Changed from #0066CC to match button color */
         }
         
         * {
@@ -34,9 +55,9 @@
         }
 
         header {
-            border-bottom: 1px solid #d2d2d7;
             margin-bottom: 2rem;
             padding-bottom: 1rem;
+            border-bottom: 1px solid #d2d2d7; /* Add this line */
         }
 
         .apple-logo {
@@ -44,10 +65,26 @@
             height: 40px;
         }
 
+        .apple-logo-link {
+            display: inline-block;
+            transition: opacity 0.2s ease;
+        }
+        
+        .apple-logo-link:hover {
+            opacity: 0.7;
+        }
+
+        .press-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 1.5rem 0;
+        }
+
         .press-release-header {
             color: var(--apple-gray);
             font-size: 0.875rem;
-            margin: 1.5rem 0;
+            margin: 0; /* Override previous margin */
             letter-spacing: 0.02em;
         }
 
@@ -57,6 +94,7 @@
             font-weight: 600;
             margin-bottom: 1.5rem;
             letter-spacing: -0.003em;
+            max-width: 700px; /* Add this line to limit width */
         }
 
         h2 {
@@ -90,6 +128,7 @@
 
         .footer {
             margin-top: 3rem;
+            margin-bottom: 2rem;  /* Add this line to create bottom spacing */
             padding-top: 2rem;
             border-top: 1px solid #d2d2d7;
             font-size: 0.875rem;
@@ -122,6 +161,15 @@
                 font-size: 1.125rem;
                 padding: 0 0.75rem;
             }
+
+            .press-header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .share-buttons {
+                align-self: flex-end;
+            }
         }
 
         @media (prefers-color-scheme: dark) {
@@ -133,10 +181,11 @@
             :root {
                 --apple-gray: #86868b;
                 --apple-text: #f5f5f7;
+                --apple-link: #2997ff;  /* Added to match button color in dark mode */
             }
 
             header {
-                border-bottom-color: #333;
+                border-bottom-color: #333; /* Add this line */
             }
 
             .press-contact,
@@ -144,23 +193,112 @@
                 border-top-color: #333;
             }
         }
+
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end; /* Change back to flex-end */
+        }
+
+        .share-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--apple-text);
+            border: 1.5px solid var(--apple-gray);
+        }
+
+        .share-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .share-button:hover {
+            transform: scale(1.05);
+            border-color: var(--apple-text);
+        }
+
+        .apple-button {
+            display: inline-block;
+            background-color: #0071e3;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 980px;
+            font-size: 17px;
+            font-weight: 400;
+            text-decoration: none;
+            margin: 1rem 0 2rem;
+            transition: all 0.2s ease;
+        }
+
+        .apple-button:hover {
+            background-color: #0077ED;
+            text-decoration: none;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .apple-button {
+                background-color: #2997ff;
+            }
+            
+            .apple-button:hover {
+                background-color: #3399ff;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <svg class="apple-logo" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.0729 5.61088C13.0729 5.61088 13.0729 5.61088 13.0729 5.61088C13.0729 4.16634 13.8946 2.92297 15.0213 2.09352C14.2835 1.0761 13.1568 0.41357 11.8462 0.32649C10.4518 0.152329 9.06613 1.0761 8.41455 1.0761C7.67683 1.0761 6.46384 0.32649 5.33712 0.32649C3.76492 0.32649 2.2766 1.24886 1.41272 2.70632C-0.333264 5.62235 0.872633 9.93931 2.53251 12.3342C3.33414 13.4871 4.31155 14.7739 5.59303 14.7305C6.80603 14.6869 7.24541 13.9376 8.67108 13.9376C10.0967 13.9376 10.4941 14.7305 11.7929 14.6869C13.1359 14.6434 14.0256 13.4871 14.7853 12.3342C15.3774 11.5415 15.6333 11.1502 16 10.2279C13.6889 9.37256 13.0729 7.06766 13.0729 5.61088ZM10.7077 3.1824C11.4034 2.35296 11.8847 1.17377 11.7929 0C10.7496 0.0870813 9.53658 0.72669 8.79886 1.55613C8.10119 2.29574 7.57793 3.47493 7.71584 4.60505C8.84256 4.69213 10.012 4.01167 10.7077 3.1824Z" fill="currentColor"/>
-            </svg>
+            <a href="https://uxmonopoly.com/p/2dbd06ad" class="apple-logo-link">
+                <svg class="apple-logo" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.0729 5.61088C13.0729 5.61088 13.0729 5.61088 13.0729 5.61088C13.0729 4.16634 13.8946 2.92297 15.0213 2.09352C14.2835 1.0761 13.1568 0.41357 11.8462 0.32649C10.4518 0.152329 9.06613 1.0761 8.41455 1.0761C7.67683 1.0761 6.46384 0.32649 5.33712 0.32649C3.76492 0.32649 2.2766 1.24886 1.41272 2.70632C-0.333264 5.62235 0.872633 9.93931 2.53251 12.3342C3.33414 13.4871 4.31155 14.7739 5.59303 14.7305C6.80603 14.6869 7.24541 13.9376 8.67108 13.9376C10.0967 13.9376 10.4941 14.7305 11.7929 14.6869C13.1359 14.6434 14.0256 13.4871 14.7853 12.3342C15.3774 11.5415 15.6333 11.1502 16 10.2279C13.6889 9.37256 13.0729 7.06766 13.0729 5.61088ZM10.7077 3.1824C11.4034 2.35296 11.8847 1.17377 11.7929 0C10.7496 0.0870813 9.53658 0.72669 8.79886 1.55613C8.10119 2.29574 7.57793 3.47493 7.71584 4.60505C8.84256 4.69213 10.012 4.01167 10.7077 3.1824Z" fill="white"/>
+                </svg>
+            </a>
         </header>
-
         <main>
-            <div class="press-release-header">
-                PRESS RELEASE<br>
-                <span id="currentDate"></span>
+            <div class="press-header-container">
+                <div class="press-release-header">
+                    PRESS RELEASE<br>
+                    <span id="currentDate"></span>
+                </div>
+                <div class="share-buttons">
+                    <a href="#" onclick="shareOnTwitter()" class="share-button" aria-label="Share on X">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="#" onclick="shareOnLinkedIn()" class="share-button" aria-label="Share on LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="#" onclick="shareOnFacebook()" class="share-button" aria-label="Share on Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+            
+                    <a href="#" onclick="shareToMessages()" class="share-button" aria-label="Share in Messages">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.486 2 2 6.262 2 11.5c0 2.545 1.088 4.988 3 6.772v4.428l4.077-2.039c.96.284 1.933.339 2.923.339 5.514 0 10-4.262 10-9.5S17.514 2 12 2zm0 17c-.858 0-1.708-.067-2.54-.202L6 20.433V17.29l-.436-.352C3.939 15.597 3 13.592 3 11.5 3 6.813 7.038 3 12 3c4.963 0 9 3.813 9 8.5s-4.037 8.5-9 8.5z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
-
-            <h1>Apple Introduces Groundbreaking Business Intelligence Platform, in Collaboration with Microsoft and OpenAI</h1>
+            <h1>Apple Fuses Intuitive Design with Cutting-Edge AI in New BI Suite</h1>
+            
+            <a href="https://uxmonopoly.com/p/2dbd06ad" class="apple-button">
+                Witness the Power of AI-Driven Analytics
+            </a>
 
             <p><strong>CUPERTINO, California—<span id="currentMonthYear"></span></strong>—Apple® today announced the debut of Apple Business Intelligence, an innovative platform that combines Apple's hallmark design, intuitive user experience, and stringent privacy standards with the power of Microsoft's enterprise tools and OpenAI's state-of-the-art artificial intelligence models. This new suite is set to redefine the way organizations analyze and visualize their data.</p>    
 
@@ -183,14 +321,9 @@
             <h2>Availability</h2>
             <p>The Apple Business Intelligence platform is available in select markets now, with global rollout scheduled for 2026. Customers can preview the <a href="https://uxmonopoly.com/p/2dbd06ad">Apple Business Intelligence Case Study</a> to learn more.</p>
 
-            <p>Apple revolutionized personal technology with the introduction of the Macintosh in 1984. Today, Apple leads the world in innovation with iPhone®, iPad, Mac, Apple Watch®, and Apple TV®. Apple's five software platforms—iOS, iPadOS, macOS, watchOS®, and tvOS®—provide seamless experiences across all Apple devices and empower people with breakthrough services including the App Store®, Apple Music®, Apple Pay®, and iCloud®. Apple's more than 100,000 employees are dedicated to making the best products on earth, and to leaving the world better than we found it.</p>
-
-            <div class="press-contact">
-                <h2>Press Contacts</h2>
-                <p>Apple Media Helpline<br>
-                (408) 974-2042<br>
-                media.helps@apple.com</p>
-            </div>
+            <a href="https://uxmonopoly.com/p/2dbd06ad" class="apple-button">
+                Explore the Possible
+            </a>
 
             <div class="footer">
                 <p>© 2025 Apple Inc. All rights reserved. Apple, the Apple logo, Apple Vision Pro, iPad, Mac, Apple Watch, and Apple TV are trademarks of Apple. Microsoft, Microsoft 365, and Azure are trademarks of Microsoft. Other company and product names may be trademarks of their respective owners.</p>
@@ -212,6 +345,45 @@
     // Call the updateDate function when the page loads
     window.onload = updateDate;
 </script>
-    
+<script>
+    // Share content configuration
+    const shareConfig = {
+        title: 'Apple Fuses Intuitive Design with Cutting-Edge AI in New BI Suite',
+        description: 'Apple unveils revolutionary Business Intelligence platform featuring Vision Pro integration, OpenAI technology, and Microsoft enterprise tools.',
+        url: 'https://applebusinessintelligence.com'
+    };
+
+    // Check if Web Share API is available
+    const canShare = navigator.share !== undefined;
+
+    function shareToMessages() {
+        if (canShare) {
+            navigator.share({
+                title: shareConfig.title,
+                text: shareConfig.description,
+                url: shareConfig.url
+            }).catch(error => console.log('Error sharing:', error));
+        } else {
+            const text = encodeURIComponent(`${shareConfig.title}: ${shareConfig.url}`);
+            window.open(`sms:?&body=${text}`, '_blank');
+        }
+    }
+
+    function shareOnTwitter() {
+        const text = encodeURIComponent(`${shareConfig.title}`);
+        const url = encodeURIComponent(shareConfig.url);
+        window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+    }
+
+    function shareOnLinkedIn() {
+        const url = encodeURIComponent(shareConfig.url);
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${encodeURIComponent(shareConfig.title)}&summary=${encodeURIComponent(shareConfig.description)}`, '_blank');
+    }
+
+    function shareOnFacebook() {
+        const url = encodeURIComponent(shareConfig.url);
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${encodeURIComponent(shareConfig.title)}`, '_blank');
+    }
+</script> 
 </body>
 </html>
